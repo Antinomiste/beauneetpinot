@@ -59,19 +59,19 @@ st.markdown("<h4 style='text-align: left; color: black;'>Les Américains et le P
 
 "Commençons par une vue d'ensemble du marché américain. Sans trop de surprise, les vins américains y sont largement dominants, mais la France arrive en bonne seconde place, suivie de près par l'Italie."
 
-st.image("images\compte_vins_par_pays.png",
+st.image("images/compte_vins_par_pays.png",
              #width=500,
              )
 
 "En termes de cépage, les deux gagnants y sont le Pinot Noir et le Chardonnay. Bonne nouvelle : ce sont les deux que vous proposez. Votre offre semble devoir s'insérer adéquatement dans le paysage américain."
 
-st.image("images\compte_vins_par_variete.png",
+st.image("images/compte_vins_par_variete.png",
              #width=1000,
              )
 
 "Si on se concentre sur le Pinot Noir, on remarque cependant que la production américaine y est encore plus largement dominante. Votre offre va donc vraisemblablement remplir une niche plus spécifique, celle des amateurs du terroir bourguignon."
 
-st.image("images\pinot_per_country.png",
+st.image("images/pinot_per_country.png",
              #width=1000,
              )
 
@@ -80,13 +80,13 @@ st.markdown("<h4 style='text-align: left; color: black;'>Des prix qui penchent �
 
 "Nous ne vous apprenons rien en notant que l'offre oenologique est caractérisée par l'existence de bouteilles à des prix presque sans limite. Cela ne change pas, à cet égard, si l'on se concentre sur la région de Bourgogne ou sur le Pinot Noir. Ignorant ces valeurs, cependant, on obtient une distribution relativement régulière, qui continue de pencher à droite, de se caractériser par des bouteilles chères et rares."
 
-st.image("images\distribution_prix.png",
+st.image("images/distribution_prix.png",
              #width=1000,
              )
 
 "Les choses changent, relativement, si l'on concentre sur les vins de Beaune. Continuant de pencher à droite, l'ensemble est dépourvu de valeurs aberrantes, et montre un territoire à prix élevés mais assez réguliers, avec une moyenne à 57\$ et une médiane à 53\$."
 
-st.image("images\\beaune_distribution_prix.png",
+st.image("images/beaune_distribution_prix.png",
              #width=1000,
              )
 
@@ -95,7 +95,7 @@ st.markdown("<h4 style='text-align: left; color: black;'>Un terroir apprécié</
 
 "Dans l'ensemble du dataset, les notes sont réparties de façon à peu près normale, autour d'un score de 88."
 
-st.image("images\distribution_notes.png",
+st.image("images/distribution_notes.png",
              #width=1000,
              )
 
@@ -103,19 +103,19 @@ st.image("images\distribution_notes.png",
 
 col1, col2 = st.columns(2)
 with col1:
-    st.image("images\pinot_distribution_notes.png",
+    st.image("images/pinot_distribution_notes.png",
             caption="Les Notes du Pinot",
              #width=1000,
              )
 with col2:
-    st.image("images\\bourgogne_distribution_notes.png",
+    st.image("images/bourgogne_distribution_notes.png",
             caption="Les Notes Bourguignonnes",
              #width=1000,
              )
 
 "Mais ce sont les vins de Beaune qui offrent un résultat spectaculaire, n'étant presque jamais dans le bas du panier et affichant une moyenne au delà de 91 et une forte présence dans la fourchette 91-95."
 
-st.image("images\\beaune_distribution_notes.png",
+st.image("images/beaune_distribution_notes.png",
              #width=1000,
              )
 
@@ -128,23 +128,23 @@ Pour le dire simplement, à cause de la variété des contextes de production au
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.image("images\heatmap.png",
+    st.image("images/heatmap.png",
             caption="Corrélation Viticoles",
              #width=1000,
              )
 with col2:
-    st.image("images\\bourgogne_heatmap.png",
+    st.image("images/bourgogne_heatmap.png",
             caption="Corrélations Bourguignonnes",
              #width=1000,
              )
 
 with col3:
-    st.image("images\\beaune_heatmap.png",
+    st.image("images/beaune_heatmap.png",
             caption="Corrélations Beaunoises",
              #width=1000,
              )
 
-st.image("images\\beaune_price_per_year.png",
+st.image("images/beaune_price_per_year.png",
     caption="Prix et Années à Beaune",
              #width=1000,
              )
@@ -174,11 +174,11 @@ Que disent les gens, parlant du vin ? Si l'on prend une visualisation brute des 
 """
 col1, col2 = st.columns(2)
 with col1:
-    st.image("images\words\wordfreq.png",
+    st.image("images/words/wordfreq.png",
              #width=1000,
              )
 with col2:
-    st.image("images\words\wordcloud.png",
+    st.image("images/words/wordcloud.png",
              #width=1000,
              )
 
@@ -188,12 +188,12 @@ Du côté du Pinot les critiques remarquent de façon prédominante la cerise, e
 
 col1, col2 = st.columns(2)
 with col1:
-    st.image("images\words\pinot_wordfreq.png",
+    st.image("images/words/pinot_wordfreq.png",
             caption="Les Mots du Pinot",
              #width=1000,
              )
 with col2:
-    st.image("images\words\\bourgogne_wordcloud.png",
+    st.image("images/words/bourgogne_wordcloud.png",
             caption="Les Mots de la Bourgogne",
              #width=1000,
              )
@@ -202,7 +202,7 @@ with col2:
 Concentrons-nous finalement sur Beaune. Là, nous rencontrons toutefois une limitation, qui est que tous les vins du terroir sont commentés par la même personne, sauf erreur : Roger Voss. Les analyses lexicales sont donc nécessairement dépendantes de ses idiosyncrasies de langage. Nous remarquons toutefois de nouveau l'importance du tannin, du fruit et de l'acidité, ainsi que la présence discrète du bois et de la saveur fumée.
 """
 
-st.image("images\words\\beaune_wordcloud.png",
+st.image("images/words/beaune_wordcloud.png",
             caption="Les Mots de Beaune",
              #width=1000,
              )
@@ -210,7 +210,7 @@ st.image("images\words\\beaune_wordcloud.png",
 
 "Notez enfin que ces appréciations impressionnistes peuvent être complétées par des études plus prosaïque de fréquence, dont nous donnons ici un extrait pour la Bourgogne."
 
-st.image("images\words\\bourgogne_words.png",
+st.image("images/words/bourgogne_words.png",
              #width=1000,
              )
 
